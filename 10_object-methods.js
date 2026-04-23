@@ -57,3 +57,15 @@ console.log(secureArtificats.catelogId);
 for (const [key, value] of Object.entries(secureArtificats)) {
   console.log(key, value);
 }
+
+const desc = Object.getOwnPropertyDescriptor(secureArtificats, "catelogId");
+console.log(desc);
+
+// loops
+//
+// 1. for()
+// 2. while()
+// 3. do while()
+// 4. for...in - objects, avoid on arrays
+// 5. for...of - objects, arrays
+// 6. map, forEach, filter, reduce
