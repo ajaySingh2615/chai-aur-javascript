@@ -79,3 +79,20 @@ function makeFun() {
 
 const myFunc = makeFun();
 myFunc();
+
+function outer() {
+  let count = 0; // this variable lives in outer's scope
+
+  function inner() {
+    count++; // inner "closes over" count
+    console.log(count);
+  }
+
+  return inner;
+}
+
+const counter = outer();
+
+counter();
+counter();
+counter();
