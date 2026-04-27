@@ -24,3 +24,12 @@ ranbir.makeFilm = function () {
 console.log(ranbir.makeFilm());
 console.log(ranbir.runBusiness());
 console.log(ranbir.cookTraditionalDish());
+
+// PolyFill
+Array.prototype.last = function () {
+  return this[this.length - 1];
+};
+
+console.log([1, 2, 3].last());
+
+Array.prototype;
